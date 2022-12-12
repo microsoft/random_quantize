@@ -19,7 +19,7 @@ comprised of various data modalities.
 ## Usage
 The code has been tested with PyTorch 1.10.0, CUDA 11.3 and CuDNN 8.2.0. 
 You are recommended to work with [this docker image](https://hub.docker.com/layers/wuzhiron/pytorch/pytorch1.10.0-cuda11.3-cudnn8-singularity/images/sha256-3e0feccdb9a72cc93e520c35dcf08b928ca379234e4ed7fe7376f7eb53d1dd7a?context=explore).
-Bellow are use cases based on [moco-v3](https://github.com/facebookresearch/moco-v3) with minimal effort that allow one to immediately inject our augmentation into their own project.
+Bellow are use cases based on [moco-v3](https://github.com/facebookresearch/moco-v3) with minimal effort that allow those having an interest to immediately inject our augmentation into their own project.
 
 1. Call the augmentation as one of torchvision.transforms modules. 
 ```python
