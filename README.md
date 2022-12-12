@@ -11,10 +11,10 @@ comprised of various data modalities.
 
 | Augmentations |Pre-trained checkpoints|Results
  :-: | :-:| :-:
-|         Ours            |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_100ep.pth.tar) |42.9
-|  RRC+Ours (100 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_100ep.pth.tar) |67.9
-|  RRC+Ours (300 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_300ep.pth.tar) |71.6
-|  RRC+Ours (800 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_800ep.pth.tar) |72.1
+|Randomized Quantization|[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_100ep.pth.tar) |42.9
+|RRC + Randomized Quantization (100 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_100ep.pth.tar) |67.9
+|RRC + Randomized Quantization (300 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_300ep.pth.tar) |71.6
+|RRC + Randomized Quantization (800 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_800ep.pth.tar) |72.1
 
 ## Usage
 The code has been tested with PyTorch 1.10.0, CUDA 11.3 and CuDNN 8.2.0. 
@@ -23,7 +23,7 @@ Bellow are use cases based on [moco-v3](https://github.com/facebookresearch/moco
 
 1. Call the augmentation as one of torchvision.transforms modules. 
 ```python
-region_num = 2
+region_num = 8
 https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/main_moco.py#L262-L285
 augmentation1 = [
     transforms.RandomResizedCrop(224, scale=(args.crop_min, 1.)),
@@ -38,7 +38,7 @@ augmentation2 = [
 ```
 2. Apply randomly our augmentation with a given probability.
 ```python
-region_num = 2
+region_num = 8
 p_random_apply1, p_random_apply2 = 0.5, 0.5
 #https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/main_moco.py#L262
 augmentation1 = [
@@ -55,7 +55,7 @@ augmentation2 = [
 3. Call the augmentation in forward(). This is faster than above two usages since the augmentation is deployed on GPUs.
 ```python
 # https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/moco/builder.py#L35
-region_num = 2
+region_num = 8
 self.rand_quant_layer = RandomizedQuantizationAugModule(region_num)
 # https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/moco/builder.py#L86-L94
 q1 = self.predictor(self.base_encoder(self.rand_quant_layer(x1)))
