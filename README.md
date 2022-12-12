@@ -11,7 +11,7 @@ comprised of various data modalities.
 
 | Augmentations |Pre-trained checkpoints|Results
  :-: | :-:| :-:
-|Randomized Quantization|[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_100ep.pth.tar) |42.9
+|Randomized Quantization (100 epochs) |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_100ep.pth.tar) |42.9
 |RRC + Randomized Quantization (100 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_100ep.pth.tar) |67.9
 |RRC + Randomized Quantization (300 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_300ep.pth.tar) |71.6
 |RRC + Randomized Quantization (800 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_800ep.pth.tar) |72.1
