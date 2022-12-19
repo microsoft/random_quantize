@@ -16,6 +16,14 @@ comprised of various data modalities.
 |RRC + Randomized Quantization (300 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_300ep.pth.tar) |71.6
 |RRC + Randomized Quantization (800 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_800ep.pth.tar) |72.1
 
+## Pretrained checkpoints on Audioset under [byol-a](https://arxiv.org/abs/2103.06695)
+
+| Method |Augmentation|NS|US8K|VC1|VF|SPCV2/12|SPCV2|Average
+ :-: | :-:| :-: | :-: | :-: | :-: | :-: | :-: | :-:
+|BYOL-A |RRC + [Mixup](https://arxiv.org/abs/1710.09412)|74.1|79.1|40.1|90.2|91.0|92.2|77.8
+|[Our model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_audio.pth) |RRC + Randomized Quantization|74.2|78.0|45.7|92.6|95.1|92.1|79.6
+
+
 ## Usage
 The code has been tested with PyTorch 1.10.0, CUDA 11.3 and CuDNN 8.2.0. 
 You are recommended to work with [this docker image](https://hub.docker.com/layers/wuzhiron/pytorch/pytorch1.10.0-cuda11.3-cudnn8-singularity/images/sha256-3e0feccdb9a72cc93e520c35dcf08b928ca379234e4ed7fe7376f7eb53d1dd7a?context=explore).
