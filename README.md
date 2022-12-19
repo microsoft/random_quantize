@@ -18,7 +18,7 @@ comprised of various data modalities.
 
 ## Pretrained checkpoints on Audioset under [byol-a](https://arxiv.org/abs/2103.06695)
 
-| Method |Augmentation|NS|US8K|VC1|VF|SPCV2/12|SPCV2|Average
+| Method |Augmentations|NS|US8K|VC1|VF|SPCV2/12|SPCV2|Average
  :-: | :-:| :-: | :-: | :-: | :-: | :-: | :-: | :-:
 |BYOL-A |RRC + [Mixup](https://arxiv.org/abs/1710.09412)|74.1|79.1|40.1|90.2|91.0|92.2|77.8
 |[Our model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_audio.pth) |RRC + Randomized Quantization|74.2|78.0|45.7|92.6|95.1|92.1|79.6
