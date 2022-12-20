@@ -9,7 +9,7 @@ comprised of various data modalities.
 
 ## Pretrained checkpoints on ImageNet under [moco-v3](https://arxiv.org/abs/2104.02057)
 
-| Augmentations |Pre-trained checkpoints|Results
+| Augmentations |Pre-trained checkpoints|Linear probe
  :-: | :-:| :-:
 |Randomized Quantization (100 epochs) |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/randomized_quantization_100ep.pth.tar) |42.9
 |RRC + Randomized Quantization (100 epochs)  |[model](https://frontiers.blob.core.windows.net/pretraining/projects/whm_ckpt/random_quantize/rrc_randomized_quantization_100ep.pth.tar) |67.9
