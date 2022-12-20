@@ -1,5 +1,5 @@
 ## Introduction
-This is a PyTorch implementation of [Randomized Quantization for Data Agnostic Representation Learning](https://arxiv.org/).
+This is a PyTorch implementation of [Randomized Quantization for Data Agnostic Representation Learning](https://arxiv.org/abs/2212.08663).
 This paper introduces a self-supervised augmentation tool for data agnostic representation learning, by quantizing each input channel through a non-uniform quantizer, with the quantized value
 sampled randomly within randomly generated quantization bins.
 Applying the randomized quantization in conjunction with sequential augmentations on self-supervised contrastive models achieves on par results with 
@@ -79,7 +79,12 @@ with torch.no_grad():  # no gradient
 
 ## Citation
 ```
-
+@Article{wu2022randomized,
+      author={Huimin Wu and Chenyang Lei and Xiao Sun and Peng-Shuai Wang and Qifeng Chen and Kwang-Ting Cheng and Stephen Lin and Zhirong Wu},
+      journal = {arXiv:2212.08663},
+      title={Randomized Quantization for Data Agnostic Representation Learning}, 
+      year={2022},
+}
 
 ```
 ## Contributing
