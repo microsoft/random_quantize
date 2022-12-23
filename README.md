@@ -32,7 +32,7 @@ Bellow are use cases based on [moco-v3](https://github.com/facebookresearch/moco
 1. Call the augmentation as one of torchvision.transforms modules. 
 ```python
 region_num = 8
-https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/main_moco.py#L262-L285
+#https://github.com/facebookresearch/moco-v3/blob/c349e6e24f40d3fedb22d973f92defa4cedf37a7/main_moco.py#L262-L285
 augmentation1 = [
     transforms.RandomResizedCrop(224, scale=(args.crop_min, 1.)),
     RandomizedQuantizationAugModule(region_num, transforms_like=True),
