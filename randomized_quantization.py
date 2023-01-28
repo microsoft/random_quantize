@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class RandomizedQuantizationAugModule(nn.Module):
-    def __init__(self, region_num, collapse_to_val = 'middle', spacing='random', transforms_like=False, p_random_apply_rand_quant = 1):
+    def __init__(self, region_num, collapse_to_val = 'inside_random', spacing='random', transforms_like=False, p_random_apply_rand_quant = 1):
         """
         region_num: int;
         """
