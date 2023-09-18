@@ -1,5 +1,5 @@
 ## Introduction
-This is a PyTorch implementation of [Randomized Quantization for Data Agnostic Representation Learning](https://arxiv.org/abs/2212.08663).
+This is a PyTorch implementation of ICCV 2023 paper [Randomized Quantization for Data Agnostic Representation Learning](https://arxiv.org/abs/2212.08663).
 This paper introduces a self-supervised augmentation tool for data agnostic representation learning, by quantizing each input channel through a non-uniform quantizer, with the quantized value
 sampled randomly within randomly generated quantization bins.
 Applying the randomized quantization in conjunction with sequential augmentations on self-supervised contrastive models achieves on par results with 
