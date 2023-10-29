@@ -79,11 +79,19 @@ with torch.no_grad():  # no gradient
 
 ## Citation
 ```
-@Article{wu2022randomized,
-      author={Huimin Wu and Chenyang Lei and Xiao Sun and Peng-Shuai Wang and Qifeng Chen and Kwang-Ting Cheng and Stephen Lin and Zhirong Wu},
-      journal = {arXiv:2212.08663},
-      title={Randomized Quantization for Data Agnostic Representation Learning}, 
-      year={2022},
+@inproceedings{wu2023randomized,
+  title={Randomized Quantization: A Generic Augmentation for Data Agnostic Self-supervised Learning},
+  author={Wu, Huimin and Lei, Chenyang and Sun, Xiao and Wang, Peng-Shuai and Chen, Qifeng and Cheng, Kwang-Ting and Lin, Stephen and Wu, Zhirong},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={16305--16316},
+  year={2023}
+}
+
+@Article{wu2023randomized,
+  author={Huimin Wu and Chenyang Lei and Xiao Sun and Peng-Shuai Wang and Qifeng Chen and Kwang-Ting Cheng and Stephen Lin and Zhirong Wu},
+  journal = {arXiv:2212.08663},
+  title={Randomized Quantization: A Generic Augmentation for Data Agnostic Self-supervised Learning}, 
+  year={2023},
 }
 
 ```
